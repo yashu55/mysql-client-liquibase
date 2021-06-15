@@ -4,6 +4,12 @@ FROM openjdk:11
 # Check for update
 RUN apt-get update
 
+# Install Python 3.7 and PIP 3
+
+RUN apt-get install python3.7 -y
+RUN apt install python3-pip -y
+
+
 # Mysql Release Version
 ARG MYSQL_CLIENT_VERSION=8.*
 
